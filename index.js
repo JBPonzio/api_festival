@@ -13,6 +13,6 @@ app.use("/events", eventRoutes);
 app.use("/artis", artistRoutes);
 app.use("", authentificationRoutes);
 
-app.listen(8000, () => console.log("server started"));
+app.listen(process.dev.PORT || 8000, () => console.log("server started"));
 
 
